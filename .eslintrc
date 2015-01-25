@@ -1,0 +1,9 @@
+{
+  "extends": ["react-app", "plugin:prettier/recommended"],
+  "plugins": ["react-hooks", "nextjs"],
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "nextjs/no-console-logs": "error"
+  }
+}

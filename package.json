@@ -7,6 +7,18 @@
     "type-check": "tsc",
     "prepare": "husky install"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "eslint --fix", 
+      "prettier --write",
+      "git add"
+    ]
+  },
   "dependencies": {
     "next": "^13.1.5",
     "react": "^18.2.0",
