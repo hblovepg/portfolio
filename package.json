@@ -4,12 +4,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "type-check": "tsc",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "src/**/*.{ts,tsx}": [
