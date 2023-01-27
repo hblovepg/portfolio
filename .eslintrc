@@ -1,9 +1,12 @@
 {
   "extends": ["react-app", "plugin:prettier/recommended"],
-  "plugins": ["react-hooks", "nextjs"],
+  "plugins": ["react-hooks"],
   "rules": {
+    "no-unused-vars": "error",
+    "react/display-name": 0,
+    "react/no-unknown-property": 0,
+    "react/react-in-jsx-scope": 0,
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
-    "nextjs/no-console-logs": "error"
+    "react-hooks/exhaustive-deps": "warn"
   }
 }
